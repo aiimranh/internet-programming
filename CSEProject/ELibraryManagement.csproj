@@ -77,8 +77,6 @@
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
-    <Content Include="css\adminauthormanagement.aspx" />
-    <Content Include="css\adminpulishermanagement.aspx" />
     <Content Include="css\customstylesheet.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
@@ -1794,20 +1792,6 @@
     </Compile>
     <Compile Include="adminpublishermanagement.aspx.designer.cs">
       <DependentUpon>adminpublishermanagement.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="css\adminauthormanagement.aspx.cs">
-      <DependentUpon>adminauthormanagement.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="css\adminauthormanagement.aspx.designer.cs">
-      <DependentUpon>adminauthormanagement.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="css\adminpulishermanagement.aspx.cs">
-      <DependentUpon>adminpulishermanagement.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="css\adminpulishermanagement.aspx.designer.cs">
-      <DependentUpon>adminpulishermanagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>

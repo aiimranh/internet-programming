@@ -96,13 +96,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="row">
-                     <div class="col">
-                        <center>
-                           <span class="badge badge-pill badge-info">Login Credentials</span>
-                        </center>
-                     </div>
-                  </div>
+
                   <div class="row">
                      <div class="col-md-6">
                         <label>Member ID</label>

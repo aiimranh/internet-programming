@@ -12,14 +12,14 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                        <h4>Publisher Details</h4>
+                                        <h4>Publisher Info</h4>
                                     </center>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <center>
-                                        <img width="100px" src="imgs/publisher.png" />         
+                                        <img width="100px" src="imgs/publisher1.png" />         
                                     </center>
                             </div>
                         </div>
@@ -34,7 +34,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="ID"></asp:TextBox>
-                                        <asp:Button class="btn btn-primary" ID="Button1" runat="server" Text="Go" />
+                                        <asp:Button class="btn btn-primary" ID="Button1" runat="server" Text="Run" />
                                     </div>
                                 </div>
                             </div>
@@ -47,13 +47,13 @@
                         </div>
                         <div class="row">
                             <div class="col-4">
-                                <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" />
+                                <asp:Button ID="Button2" class="btn btn-lg btn-block btn-success" runat="server" Text="Upload" />
                             </div>
                             <div class="col-4">
                                 <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" />
                             </div>
                             <div class="col-4">
-                                <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" />
+                                <asp:Button ID="Button4" class="btn btn-lg btn-block btn-danger" runat="server" Text="Remove" />
                             </div>
                         </div>
                     </div>
