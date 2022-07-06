@@ -23,7 +23,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-            <div class="container-fluid">
+    <div class="container-fluid">
       <div class="row">
          <div class="col-md-5">
             <div class="card">
@@ -53,16 +53,16 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-md-3">
+                     <div class="col-md-4">
                         <label>Book ID</label>
                         <div class="form-group">
                            <div class="input-group">
-                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Member ID"></asp:TextBox>
-                              <asp:LinkButton class="btn btn-primary" ID="LinkButton4" runat="server"><i class="fas fa-check-circle"></i></asp:LinkButton>
+                              <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Book ID"></asp:TextBox>
+                              <asp:Button class="form-control btn btn-primary" ID="Button4" runat="server" Text="Go" OnClick="Button4_Click" />
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-9">
+                     <div class="col-md-8">
                         <label>Book Name</label>
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Book Name"></asp:TextBox>
@@ -187,10 +187,10 @@
                   </div>
                   <div class="row">
                      <div class="col-4">
-                        <asp:Button ID="Button1" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" OnClick="Button1_Click1" />
+                        <asp:Button ID="Button1" class="btn btn-lg btn-block btn-success" runat="server" Text="Add" OnClick="Button1_Click" />
                      </div>
                      <div class="col-4">
-                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" OnClick="Button3_Click1" />
+                        <asp:Button ID="Button3" class="btn btn-lg btn-block btn-warning" runat="server" Text="Update" OnClick="Button3_Click" />
                      </div>
                      <div class="col-4">
                         <asp:Button ID="Button2" class="btn btn-lg btn-block btn-danger" runat="server" Text="Delete" OnClick="Button2_Click" />
@@ -217,17 +217,17 @@
                      </div>
                   </div>
                   <div class="row">
-                      <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elibraryDBConnectionString %>" SelectCommand="SELECT * FROM [book_master_tbl]"></asp:SqlDataSource>
-
+                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elibraryDBConnectionString %>" SelectCommand="SELECT * FROM [book_master_tbl]"></asp:SqlDataSource>
                      <div class="col">
                         <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="book_id" DataSourceID="SqlDataSource1">
-                            <Columns>
-                                <asp:BoundField DataField="book_id" HeaderText="book_id" ReadOnly="True" SortExpression="book_id" />
-                                
-                                <asp:TemplateField>
-                                    <ItemTemplate>
-                                        
-                                     <div class="container-fluid">
+                           <Columns>
+                              <asp:BoundField DataField="book_id" HeaderText="ID" ReadOnly="True" SortExpression="book_id" >
+                                 <ControlStyle Font-Bold="True" />
+                                 <ItemStyle Font-Bold="True" />
+                              </asp:BoundField>
+                              <asp:TemplateField>
+                                 <ItemTemplate>
+                                    <div class="container-fluid">
                                        <div class="row">
                                           <div class="col-lg-10">
                                              <div class="row">
@@ -282,12 +282,10 @@
                                           </div>
                                        </div>
                                     </div>
-
-                                    </ItemTemplate>
-                                </asp:TemplateField>
-                                
-                            </Columns>
-                         </asp:GridView>
+                                 </ItemTemplate>
+                              </asp:TemplateField>
+                           </Columns>
+                        </asp:GridView>
                      </div>
                   </div>
                </div>

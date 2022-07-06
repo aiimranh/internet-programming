@@ -35,7 +35,7 @@ namespace CSEProject
 
 
         // update button click
-        protected void Button3_Click1(object sender, EventArgs e)
+        protected void Button3_Click(object sender, EventArgs e)
         {
             updateBookByID();
         }
@@ -45,7 +45,7 @@ namespace CSEProject
             deleteBookByID();
         }
         // add button click
-        protected void Button1_Click1(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
             if (checkIfBookExists())
             {
@@ -243,7 +243,7 @@ namespace CSEProject
             }
             catch (Exception ex)
             {
-                Response.Write("<script>alert('Invalid Book ID');</script>");
+
             }
         }
 
