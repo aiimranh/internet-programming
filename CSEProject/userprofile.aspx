@@ -2,15 +2,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
        <script type="text/javascript">
-       $(document).ready(function () {
-           $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
-       });
+           $(document).ready(function () {
+               $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+           });
        </script>
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-       <div class="container-fluid">
+     <div class="container-fluid">
       <div class="row">
          <div class="col-md-5">
             <div class="card">
@@ -90,7 +90,7 @@
                      <div class="col-md-4">
                         <label>Zipcode</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox7" runat="server" placeholder="Zipcode" TextMode="Number"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox7" runat="server" placeholder="Pincode" TextMode="Number"></asp:TextBox>
                         </div>
                      </div>
                   </div>
@@ -103,13 +103,6 @@
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col">
-                        <center>
-                           <span class="badge badge-pill badge-info">Login Credentials</span>
-                        </center>
-                     </div>
-                  </div>
-                  <div class="row">
                      <div class="col-md-4">
                         <label>User ID</label>
                         <div class="form-group">
@@ -119,7 +112,7 @@
                      <div class="col-md-4">
                         <label>Old Password</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Old Password" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Old Password" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-4">
@@ -133,7 +126,7 @@
                      <div class="col-8 mx-auto">
                         <center>
                            <div class="form-group">
-                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Update" />
+                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Update" OnClick="Button1_Click" />
                            </div>
                         </center>
                      </div>
@@ -167,7 +160,7 @@
                   </div>
                   <div class="row">
                      <div class="col">
-                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                        <asp:GridView class="table table-striped table-bordered" ID="GridView1" runat="server" OnRowDataBound="GridView1_RowDataBound"></asp:GridView>
                      </div>
                   </div>
                </div>
