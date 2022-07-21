@@ -15,21 +15,21 @@
       <div class="carousel-item active">
         <img src="imgs/homepage2.jpg" class="d-block w-100" alt="homepage2.jpg">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Libaray View</h5>
+          <h5>Reading Room</h5>
           <span style="color:black; background-color: yellow;">"I have always imagined that Paradise will be a kind of a Library.".</span>
         </div>
       </div>
       <div class="carousel-item">
         <img src="imgs/homepage2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Libaray View</h5>
+          <h5>Reading Room</h5>
           <span style="color:black; background-color: yellow;">"I have always imagined that Paradise will be a kind of a Library.".</span>
         </div>
       </div>
       <div class="carousel-item">
         <img src="imgs/homepage2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Libaray View</h5>
+          <h5>Reading Room</h5>
           <span style="color:black; background-color: yellow;">"I have always imagined that Paradise will be a kind of a Library.".</span>
         </div>
       </div>
