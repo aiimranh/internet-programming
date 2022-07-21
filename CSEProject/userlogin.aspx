@@ -37,6 +37,9 @@
                         <div class="form-group">
                            <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                         </div>
+
+                         <div>Remember Me: <asp:CheckBox ID="CheckBox1" runat="server" /></div>
+
                         <div class="form-group">
                            <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" />
                         </div>
