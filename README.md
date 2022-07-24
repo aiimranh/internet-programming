@@ -12,7 +12,7 @@
 3. Data-tables
 
 # Features:
-## A. Users
+### A. Users
 1. Sign Up
 2. Login
 3. Sign Out
@@ -20,7 +20,7 @@
 5. Cookie
 6. Overdue Date
 
-## B. Admin User
+### B. Admin User
 1. Admin Login
 2. Admin Logout
 3. Author Management
